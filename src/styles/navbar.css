@@ -21,6 +21,11 @@
     transition: 0.5s;
 }
 
+.navbar > li > a {
+    color: #070B12;
+    text-decoration: none;
+}
+
 .navbar > li:hover {
     padding: 5px 45px 5px 45px;
 }

@@ -7,7 +7,7 @@ const Navbar = () => {
                 <li>About</li>
                 <li>Projects</li>
                 <li>Contact</li>
-                <li>Github</li>
+                <li><a href="https://github.com/IzykGit" target="_blank">Github</a></li>
                 <li>Resume</li>
             </ul>
         </div>

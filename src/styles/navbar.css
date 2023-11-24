@@ -1,13 +1,16 @@
+
+
 .navContainer {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     border-bottom: 1px solid #bbc1cc;
+    align-items: baseline;
 }
 
 .navbar {
     color: #070B12;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 40%;
     padding: 10px;
     list-style: none;
@@ -15,17 +18,17 @@
 
 .navbar > li {
     cursor: pointer;
-    padding: 5px 25px 5px 25px;
-    border-radius: 10px;
-    border: 1px solid #bbc1cc;
-    transition: 0.5s;
 }
+
 
 .navbar > li > a {
     color: #070B12;
     text-decoration: none;
+    transition: 0.5s;
+    font-size: 18px;
+    margin: 0 25px 0 25px;
 }
 
-.navbar > li:hover {
-    padding: 5px 45px 5px 45px;
+.navbar > li > a:hover {
+    color: #A9BCF9;
 }

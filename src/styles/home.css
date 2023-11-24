@@ -1,0 +1,10 @@
+
+
+.mainContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homeIntroduction {
+    font-size: 60px
+}

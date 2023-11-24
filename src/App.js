@@ -18,8 +18,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <Navbar AOS={'data-aos="fade-in"'} />
-      <Home />
+      <Navbar AOS={'data-aos'} />
+      <Home AOS={'data-aos'} />
 
     </div>
   );

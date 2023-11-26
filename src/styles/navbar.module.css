@@ -9,6 +9,8 @@
     top:0;
     left:0;
     width:100%;
+    background-color: #F6F8FE;
+    z-index: 3;
 }
 
 

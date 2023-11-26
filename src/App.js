@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import './App.css';
+import styles from './App.module.css'
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import Home from './components/home';
 import Navbar from './components/navbar';
+import Projects from './components/projects';
 
 
 const App = () => {
@@ -17,10 +18,10 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Navbar AOS={'data-aos'} />
       <Home AOS={'data-aos'} />
-
+      <Projects />
     </div>
   );
 }

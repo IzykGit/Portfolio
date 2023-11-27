@@ -2,14 +2,10 @@
 
 .navContainer {
     display: flex;
-    justify-content: right;
-    border-bottom: 1px solid #bbc1cc;
-    align-items: baseline;
-    position:fixed;
+    justify-content: center;
     top:0;
     left:0;
-    width:100%;
-    background-color: #F6F8FE;
+    width: 100%;
     z-index: 3;
 }
 
@@ -17,10 +13,13 @@
 .navbar {
     color: #070B12;
     display: flex;
-    justify-content: center;
-    width: 40%;
-    padding: 10px;
+    justify-content: right;
+    width: fit-content;
+    padding: 35px;
     list-style: none;
+    box-shadow: 0px 0px 15px 0px #cdd8ff;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 
 .navbar > li {
@@ -31,11 +30,11 @@
 .navbar > li > a {
     color: #070B12;
     text-decoration: none;
-    transition: 0.5s;
-    font-size: 18px;
+    transition: 0.2s;
+    font-size: 22px;
     margin: 0 25px 0 25px;
 }
 
 .navbar > li > a:hover {
-    color: #A9BCF9;
+    color: #0F3DC7;
 }

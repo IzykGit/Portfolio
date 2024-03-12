@@ -11,10 +11,10 @@
     <div class="content-width">
         <nav class="navbar">
             <ul>
-                <a href="https://www.linkedin.com/in/lance-hemphill-250b85218/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/IzykGit" target="_blank">Github</a>
-                <a href="https://www.codewars.com/users/IzykGit" target="_blank">Codewars</a>
-                <a href="https://www.frontendmentor.io/home" target="_blank">Front End Mentor</a>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Contacts</li>
+                <li>Show All</li>
             </ul>
 
         </nav>
@@ -23,14 +23,27 @@
         <main>
             <section class="intro-section">
                 <p class="intro-text-one">Hello! I'm Lance and</p>
-                <p class="intro-text-two">this is my portfolio!</p>
+                <p class="intro-text-two">welcome to my portfolio!</p>
             </section>
+
+            <!-- I know using lots of gifs is bad but it looks better in my opinion, tried to maximize performance,
+            image source is determined based on users bandwhich, see index.js file -->
     
             <section class="icons">
-                <img src="./assets/karlach-karlach-dance.gif" alt="Video games I like!" class="games-icon icon-attributes"/>
-                <img src="./assets/music-gif.gif" alt="Music I like!" class="music-icon icon-attributes"/>
-                <img src="./assets/engine.gif" alt="Hobbies I like!" class="engine-icon icon-attributes"/>
-                
+
+                <!-- things about me -->
+                <img src="./assets/gifs/karlach-karlach-dance.gif" alt="Video games I like!" class="games-icon icon-attributes" loading="lazy" value="about"/>
+                <img src="./assets/gifs/music-gif.gif" alt="Music I like!" class="music-icon icon-attributes" loading="lazy" value="about"/>
+                <img src="./assets/gifs/engine.gif" alt="Check out my hobbies on youtube!" class="engine-icon icon-attributes" loading="lazy" value="about"/>
+
+                <!-- my projects -->
+                <img src="./assets/gifs/calculator.gif" alt="A calculator project with theme switcher" class="calculator-icon icon-attributes" loading="lazy"/>
+                <img src="./assets/gifs/game.gif" alt="Rock Paper Scissors!" class="game-icon icon-attributes" loading="lazy"/>
+
+                <!-- contacts -->
+                <img src="./assets/images/codewars.svg" alt="Codewars" class="codewars-icon icon-attributes" loading="lazy"/>
+                <img src="./assets/images/Frontend Mentor_logo.jpeg" alt="Frontend Mentor" class="mentor-icon icon-attributes" loading="lazy"/>
+                <img src="./assets/images/linkedin.jpg" alt="My LinkedIn" class="linkedin-icon icon-attributes" loading="lazy"/>
             </section>
             
         </main>

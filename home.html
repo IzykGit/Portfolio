@@ -8,48 +8,48 @@
     <link rel="stylesheet" href="./styles/home.css">
 </head>
 <body>
-    <div class="content-width">
-        <nav class="navbar">
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contacts</li>
-                <li>Show All</li>
-            </ul>
+    <div class="scroll-bar">
+        <p></p>
+    </div>
 
+        <nav class="navbar">
+            <div class="list-container">
+                <ul>
+                    <li id="home" class="navlink">Home</li>
+                    <li id="about" class="navlink">About Me</li>
+                    <li id="projects" class="navlink">Projects</li>
+                    <li id="contacts" class="navlink">Contacts</li>
+                </ul>
+            </div>
         </nav>
+
     
     
         <main>
             <section class="intro-section">
-                <p class="intro-text-one">Hello! I'm Lance and</p>
-                <p class="intro-text-two">welcome to my portfolio!</p>
+                <div class="intro-text-container">
+                    <p class="intro-text-one">Hello! I'm Lance and</p>
+                    <p class="intro-text-two">welcome to my portfolio!</p>
+                </div>
+
             </section>
 
-            <!-- I know using lots of gifs is bad but it looks better in my opinion, tried to maximize performance,
-            image source is determined based on users bandwhich, see index.js file -->
-    
-            <section class="icons">
+            <section class="about-me">
 
-                <!-- things about me -->
-                <img src="./assets/gifs/karlach-karlach-dance.gif" alt="Video games I like!" class="games-icon icon-attributes" loading="lazy" value="about"/>
-                <img src="./assets/gifs/music-gif.gif" alt="Music I like!" class="music-icon icon-attributes" loading="lazy" value="about"/>
-                <img src="./assets/gifs/engine.gif" alt="Check out my hobbies on youtube!" class="engine-icon icon-attributes" loading="lazy" value="about"/>
+                <div class="about-container">
+                        <p>About Me</p>
+                </div>
 
-                <!-- my projects -->
-                <img src="./assets/gifs/calculator.gif" alt="A calculator project with theme switcher" class="calculator-icon icon-attributes" loading="lazy"/>
-                <img src="./assets/gifs/game.gif" alt="Rock Paper Scissors!" class="game-icon icon-attributes" loading="lazy"/>
 
-                <!-- contacts -->
-                <img src="./assets/images/codewars.svg" alt="Codewars" class="codewars-icon icon-attributes" loading="lazy"/>
-                <img src="./assets/images/Frontend Mentor_logo.jpeg" alt="Frontend Mentor" class="mentor-icon icon-attributes" loading="lazy"/>
-                <img src="./assets/images/linkedin.jpg" alt="My LinkedIn" class="linkedin-icon icon-attributes" loading="lazy"/>
+            </section>
+            
+            <section class="projects">
+
             </section>
             
         </main>
-    </div>
 
-    
+
     <script src="./index.js"></script>
 </body>
 </html>

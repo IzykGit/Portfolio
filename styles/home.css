@@ -14,6 +14,7 @@ html {
     scrollbar-width: none;  /* Firefox */
 
     scroll-behavior: smooth;
+    scroll-snap-stop: always
 }
 
 
@@ -48,15 +49,15 @@ main {
     margin: 0;
     font-family: "Caveat", cursive;
     font-size: 1rem;
-    border-bottom: 0.15rem solid black;
+    border-bottom: 0.25rem solid rgb(0, 63, 136);
 
-    width: 1.2%;
+    width: 5%;
 }
 
 
 
 .navbar {
-    z-index: 5;
+    position: absolute;
 
     background-color: white;
     width: 100%;
@@ -111,6 +112,15 @@ main {
     border: 0.15rem solid transparent;
 }
 
+.navlink > a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: black;
+}
+
+
 .navlink:hover {
     animation-name: link-hover;
     animation-duration: 1s;
@@ -157,20 +167,22 @@ main {
 
 .intro-section {
     height: 100vh;
-    width: 90%;
+    width: 100%;
 
     line-height: 5rem;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: 10rem;
 }
 
 .intro-text-container {
-    padding: 0.5rem;
-    border: 0.15rem solid transparent;
     letter-spacing: 0.25rem;
+    width: 100%;
 }
+
 
 .intro-text-one {
     font-size: 4rem;
@@ -214,8 +226,6 @@ main {
 
 
 
-
-
 /* about me section of webpage */
 
 .about-me {
@@ -225,29 +235,22 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;  
-
-    background-color: rgb(24, 24, 24);
-    border-radius: 3rem;  
 }
 
 
 .about-container {
-    background-color: white;
-    height: 16rem;
+    background-color: rgb(22, 22, 22);
     border-radius: 2rem;
+    height: 40rem;
 
-    padding-right: 10rem;
-    text-align: right;
-
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    padding: 3rem;
+    text-align: center;
 }
 
 .about-container > p {
     font-size: 3rem;
     font-weight: 700;
-    color: black;
+    color: white;
 }
 
 

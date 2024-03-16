@@ -1,4 +1,24 @@
 
+const text = "Looking to make great websites and inovate."
+let index = 0;
+const typingSpeed = 40
+const startDelay = 800
+
+function typeEffect() {
+    if(index < text.length) {
+        document.querySelector('.intro-description').innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, typingSpeed)
+    }
+}
+
+setTimeout(typeEffect, startDelay)
+
+
+
+
+// randomly changes the navigation link rotation from left to right
+
 const navLinks = document.querySelectorAll('.navlink')
 
 navLinks.forEach(link => {
@@ -47,7 +67,7 @@ function calculateScrollDistance() {
     console.log(`Scrolled: ${scrollPercentage.toFixed(2)}%`);
     console.log(scrollPercentage.toFixed(2))
 
-    if(scrollPercentage > 95) {
+    if(scrollPercentage >= 97) {
         return
     }
     scrolled.style.transform = `translateX(${scrollPercentage.toFixed(2)}%)`

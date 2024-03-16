@@ -2,6 +2,7 @@
 const text = "Looking to make great websites and inovate."
 
 const introDesc = document.querySelector('.intro-description')
+const contactBtn = document.querySelector('.contact-button')
 let index = 0;
 const typingSpeed = 40
 const startDelay = 850
@@ -11,6 +12,9 @@ function typeEffect() {
         introDesc.innerHTML += text.charAt(index);
         index++;
         setTimeout(typeEffect, typingSpeed)
+    }
+    else if (index = text.length) {
+        contactBtn.classList.add('contact-button')
     }
 }
 

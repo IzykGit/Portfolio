@@ -227,6 +227,41 @@ main {
     animation-fill-mode: forwards;
 }
 
+
+.hide-contact {
+    opacity: 0;
+    transform: translateX(4rem);
+
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.contact-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: black;
+
+    border: 0.15rem solid black;
+    background-color: transparent;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-button:hover {
+    animation-name: link-hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    padding: 1rem 4rem;
+    border: 0.15rem solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem white;
+}
+
+
 @keyframes text-intro-animation {
     from {
         transform: translateY(-4rem);
@@ -244,9 +279,17 @@ main {
         border-right: 0.15rem solid transparent;
     }
     to {
-        border-right: 0.15rem solid black;
+        border-right: 0.15rem solid rgb(0, 0, 0);
     }
 }
+
+
+
+
+
+
+
+
 
 
 /* about me section of webpage */

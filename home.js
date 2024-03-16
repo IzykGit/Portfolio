@@ -1,12 +1,14 @@
 
 const text = "Looking to make great websites and inovate."
+
+const introDesc = document.querySelector('.intro-description')
 let index = 0;
 const typingSpeed = 40
-const startDelay = 800
+const startDelay = 850
 
 function typeEffect() {
     if(index < text.length) {
-        document.querySelector('.intro-description').innerHTML += text.charAt(index);
+        introDesc.innerHTML += text.charAt(index);
         index++;
         setTimeout(typeEffect, typingSpeed)
     }

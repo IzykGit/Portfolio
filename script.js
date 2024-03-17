@@ -2,7 +2,7 @@
 const text = "Looking to make great websites and inovate."
 
 const introDesc = document.querySelector('.intro-description')
-const contactBtn = document.querySelector('.contact-button')
+const contactBtn = document.querySelector('.hide-contact')
 let index = 0;
 const typingSpeed = 40
 const startDelay = 850
@@ -14,6 +14,7 @@ function typeEffect() {
         setTimeout(typeEffect, typingSpeed)
     }
     else if (index = text.length) {
+        contactBtn.classList.remove('hide-contact')
         contactBtn.classList.add('contact-button')
     }
 }
@@ -81,5 +82,26 @@ function calculateScrollDistance() {
 
 window.addEventListener('scroll', calculateScrollDistance);
 
+
+
+// setting dark mode 
+
+
+const darkMode = document.getElementById('dark-mode') 
+const stylesheet = document.getElementById('style')
+let styleState = 1
+
+darkMode.addEventListener('click', () => {
+    if(styleState === 1) {
+        darkMode.innerHTML = "Light Mode"
+        stylesheet.href = "dark.css"
+        styleState = 2
+    }
+    else if (styleState === 2) {
+        darkMode.innerHTML = "Dark Mode"
+        stylesheet.href = "light.css"
+        styleState = 1
+    }
+})
 
 

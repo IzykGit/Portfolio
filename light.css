@@ -8,7 +8,7 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-html {
+html, .all-content {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 
@@ -22,7 +22,6 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
 
-    background-color: white;
     color: black;
 }
 
@@ -40,11 +39,7 @@ main {
     overflow: hidden;
 }
 
-.all-content {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100%;
-}
+
 
 
 
@@ -58,7 +53,7 @@ main {
 
 .scroll-percent {
     width: 5%;
-    border-top: 0.3rem solid rgb(0, 63, 136);
+    border-top: 0.3rem solid rgb(0, 105, 224);
 }
 
 
@@ -306,12 +301,23 @@ main {
 
 
 
+/* classes used in next sections */
 
 
+.all-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 90%;
+    align-self: flex-end;
+    opacity: 0;
+    animation: text-intro-animation 0.5s ease 0.2s forwards;
 
+    padding: 0rem 1rem;
+}
 
-
-
+.keywords {
+    font-weight: 700;
+}
 
 
 
@@ -319,32 +325,113 @@ main {
 /* about me section of webpage */
 
 .about-section {
-    height: 60vh;
+    height: fit-content;
+    width: 80%;
+}
+
+.about-section > h2 {
+    font-size: 2rem;
+}
+
+.my-goals, .about-me {
+    line-height: 2rem;
+    font-size: 1rem;
 }
 
 
-.title-container {
+
+
+
+
+
+
+/* project section of webpage */
+
+
+.projects-section {
+    height: fit-content;
+    width: 80%;
+}
+
+.projects-section > h2 {
+    font-size: 2rem;
+}
+
+.project-card {
+    border: 0.15rem solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+
+    height: fit-content;
+    padding: 1rem;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0.4rem 0.4rem 0rem 0rem black;
+    transform: translateY(-0.25rem);
+}
+
+
+
+.card-content {
+    width: 100%;
+    min-height: 13rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
+.project-text {
+    width: 26em;
+    min-height: 13rem;
+    align-self: flex-start;
 
-.about-title {
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-    font-size: 2rem;
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12rem;
+}
+
+.project-links > a {
+    text-decoration: none;
+    color: black;
     font-weight: 700;
 
     padding: 0.5rem;
     border: 0.15rem solid black;
-    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
-    background-color: white;
+
+    transition: 0.2s;
 }
 
-.projects-section {
-    height: 60vh;
+.project-links > a:hover {
+    color: white;
+    background-color: black;
+}
+
+.project-image > img {
+    height: auto;
+    width: 18rem;
+    cursor: pointer;
+    border: 0.15rem solid black;
+
+    transition: 0.2s;
+}
+
+.project-image > img:hover {
+    transform: scale(0.9);
 }
 
 

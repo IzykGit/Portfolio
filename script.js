@@ -57,18 +57,18 @@ navLinks.forEach(link => {
 // calculating the scroll distance that allows the scroll percentage to move
 // translating the text along the X axis when scrolling
 
-
+const scrollableDiv = document.querySelector('.all-content')
 const scrolled = document.querySelector('.scroll-bar');
 const scrollPercentText = document.querySelector('.scroll-percent');
 
 let scrollPercentage;
 
 function calculateScrollDistance() {
-    const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
+    const scrollTop = scrollableDiv.scrollTop;
+    const divHeight = scrollableDiv.clientHeight;
+    const scrollHeight = scrollableDiv.scrollHeight;
   
-    const totalScrollableDistance = documentHeight - windowHeight;
+    const totalScrollableDistance = scrollHeight - divHeight;
     scrollPercentage = (scrollTop / totalScrollableDistance) * 100;
   
     console.log(`Scrolled: ${scrollPercentage.toFixed(2)}%`);

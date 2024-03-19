@@ -533,6 +533,15 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .list-container > ul {
+        width: 100%;
+        padding: 0;
+    }
+
     .list-container {
         justify-content: center;
     }
@@ -628,20 +637,11 @@ main {
 
 
 @media screen and (max-width: 500px) {
-    .navbar {
-        padding: 0;
-    }
-
     .list-container {
         justify-content: center;
     }
 
-    .list-container > ul {
-        width: 100%;
-        padding: 0;
-    }
-
-    .navlink {
+    .navlink, .navlink > a {
         font-size: 1rem;
     }
 }
@@ -672,7 +672,7 @@ main {
 
 
 
-    .navlink {
-        font-size: 0.8rem;
+    .navlink, .navlink > a {
+        font-size: 0.75rem;
     }
 }

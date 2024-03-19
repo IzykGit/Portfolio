@@ -96,12 +96,12 @@ let styleState = 1
 darkMode.addEventListener('click', () => {
     if(styleState === 1) {
         darkMode.innerHTML = "Light Mode"
-        stylesheet.href = "dark.css"
+        stylesheet.href = "./styles/home-page/dark.css"
         styleState = 2
     }
     else if (styleState === 2) {
         darkMode.innerHTML = "Dark Mode"
-        stylesheet.href = "light.css"
+        stylesheet.href = "./styles/home-page/light.css"
         styleState = 1
     }
 })

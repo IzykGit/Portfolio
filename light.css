@@ -67,6 +67,15 @@ main {
 
 
 
+
+
+
+
+
+
+
+/* navbar section of webpage */
+
 .navbar {
     position: absolute;
 
@@ -476,6 +485,8 @@ main {
     width: auto;
     height: 8rem;
     padding: 0.5rem;
+
+    background-color: white;
     border: 0.15rem solid black;
     box-shadow: 0.2rem 0.2rem 0rem 0rem black;
 
@@ -614,6 +625,27 @@ main {
 }
 
 
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .list-container {
+        justify-content: center;
+    }
+
+    .list-container > ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navlink {
+        font-size: 1rem;
+    }
+}
+
+
 @media screen and (max-width: 400px) {
     .project-image {
         width: 80%;
@@ -621,5 +653,25 @@ main {
     
     .project-image > img {
         width: 100%;
+    }
+
+    .intro-description {
+        letter-spacing: 0rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .intro-text-one {
+        font-size: 1.7rem;
+    }
+
+    .intro-text-two {
+        font-size: 1.2rem;
+    }
+
+
+
+    .navlink {
+        font-size: 0.8rem;
     }
 }

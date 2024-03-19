@@ -80,7 +80,9 @@ function calculateScrollDistance() {
     scrolled.style.transform = `translateX(${scrollPercentage.toFixed(2)}%)`
 }
 
-window.addEventListener('scroll', calculateScrollDistance);
+scrollableDiv.addEventListener('scroll', calculateScrollDistance);
+
+
 
 
 

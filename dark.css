@@ -23,7 +23,8 @@ body {
     font-family: "Poppins", sans-serif;
 
     color: rgb(255, 255, 255);
-    background-color: rgb(7, 22, 53)
+    background-color: rgb(7, 22, 53);
+    overflow-x: hidden;
 }
 
 main {

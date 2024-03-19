@@ -559,7 +559,60 @@ main {
         min-height: fit-content;
         margin-bottom: 2rem;
     }
+
+
+    .logos-links > a {
+        height: 5rem;
+    }
 }
+
+
+@media screen and (max-width: 650px) {
+    .intro-section {
+        line-height: 3rem;
+    }
+
+    .intro-text-container {
+        min-width: none;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .intro-text-container > * {
+        text-align: center;
+    }
+
+    .intro-text-one {
+        font-size: 2rem;
+    }
+
+    .intro-text-two {
+        font-size: 1.5rem;
+    }
+
+    .intro-description {
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 0.7rem;
+    }
+
+
+    .contact-button {
+        display: flex;
+        align-items: center;
+
+        font-size: 1rem;
+        height: 4rem;
+    }
+    
+    .logos-links > a {
+        height: 3rem;
+    }
+}
+
 
 @media screen and (max-width: 400px) {
     .project-image {

@@ -26,28 +26,25 @@ body {
     overflow-x: hidden;
 }
 
+
+
 main {
     height: 100vh;
     width: 100%;
 
-    display: grid;
-    grid-template-columns: 40% 60%;
-    justify-items: center;
-    overflow: hidden;
+
 }
 
-.intro-section, .all-content {
-    height: 100%;
-    overflow: hidden;
+.content-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.intro-section {
-    grid-column: 1;
+.content-width > section {
+    width: 90%;
 }
 
-.all-content {
-    grid-column: 2;
-}
 
 
 
@@ -193,14 +190,12 @@ main {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .intro-text-container {
     letter-spacing: 0.15rem;
     height: fit-content;
-    min-width: 35rem;
-    width: fit-content;
 
     margin-left: 1rem;
 }
@@ -322,16 +317,6 @@ main {
 /* classes used in next sections */
 
 
-.all-content {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 90%;
-    align-self: flex-end;
-    opacity: 0;
-    animation: text-intro-animation 0.5s ease 0.2s forwards;
-
-    padding: 0rem 1rem;
-}
 
 .keywords {
     font-weight: 700;
@@ -344,7 +329,6 @@ main {
 
 .about-section {
     height: fit-content;
-    width: 90%;
 
     margin-bottom: 5rem;
 }
@@ -370,9 +354,10 @@ main {
 
 .projects-section {
     height: fit-content;
-    width: 90%;
-
-    margin-bottom: 5rem;
+    
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
 }
 
 .projects-section > h2 {

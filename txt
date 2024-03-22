@@ -1,0 +1,442 @@
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            <section class="about-section">
+                <h2>About Me</h2>
+                <p class="my-goals">Hello, my name is Lance Hemphill, and I am a <span class="keywords">Frontend Developer</span>.
+                My journey in Web Development began in late 2022, with intermittent learning throughout 2023.
+                However, from mid to late 2023, I fully committed to learning the ins and outs of software and understanding how the digital world works.
+                Currently, my primary goal is to continually enhance my skills and knowledge while seeking valuable opportunities.
+                </p>
+                <br />
+                <p class="about-me">When I am not studying though I am usually playing video games,
+                doing hobbies of mine such as car restoration, or looking for new music.</p>
+            </section>
+
+            
+            
+            
+            <section class="projects-section">
+                <h2>Featured Projects</h2>
+
+
+
+                <!-- rock paper scissors project card -->
+                <div class="project-card" style="grid-column: 1;">
+                    <h3>Rock, Paper, Scissors Project</h3>
+
+                    <p>This project is a game of Rock Paper Scissors. In this game the player to chose an option and will face off against a computer.
+                    This project was made using <span class="keywords">HTML, CSS, and Javascript</span>.</p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/IzykGit/rock-paper-scissors-game" target="_blank">GITHUB</a>
+                        <a href="https://rock-paper-scissors-game-eta-ten.vercel.app/" target="_blank">LIVE SITE</a>
+                    </div>
+
+                    <a href="https://rock-paper-scissors-game-eta-ten.vercel.app/" target="_blank" class="project-image"><img src="./assets/rock-paper-scissors.PNG" alt="Rock paper scissors project"/></a>
+                </div>
+
+
+
+                <!-- countries api project card -->
+                <div class="project-card" style="grid-column: 2;">
+                    <h3>Countries API Project</h3>
+
+                    <p>This project was made in <span class="keywords">React</span> and allows the user to search and locate countries from an <span class="keywords">API</span>.
+                    When the user selects a country they can view information about the country and also select bordering countries.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/IzykGit/rest-countries-project" target="_blank">GITHUB</a>
+                        <a href="https://rest-countries-project-sage.vercel.app/" target="_blank">LIVE SITE</a>
+                    </div>
+
+
+                    <a href="https://rest-countries-project-sage.vercel.app/" target="_blank" class="project-image"><img src="./assets/rest-countries-project.PNG" alt="Countries API Project"/></a>
+                </div>
+
+
+                <!-- calculator project card -->
+                <div class="project-card" style="grid-column: 1;">
+                    <h3>Calculator Project</h3>
+                    <p>A calculator application built using <span class="keywords">HTML, CSS, and Javascript</span> that also allows the user to switch between
+                        themes.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/IzykGit/calculator-with-themes" target="_blank">GITHUB</a>
+                        <a href="https://calculator-with-themes-delta.vercel.app/" target="_blank">LIVE SITE</a>
+                    </div>
+
+                    <a href="https://calculator-with-themes-delta.vercel.app/" target="_blank" class="project-image"><img src="./assets/calculator capture.PNG" alt="Calculator"/></a>
+                </div>
+
+
+                <!-- age calculator project card -->
+                <div class="project-card" style="grid-column: 2;">
+                    <h3>Age Calculator Project</h3>
+                    <p>An age calculator application built using <span class="keywords">HTML, CSS, and Javascript</span> that also allows the user to calculate
+                    the age of something. The user enter the year, month, and day of their choosing and the app will calculate the age based on today's date.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/IzykGit/age-calculator-app" target="_blank">GITHUB</a>
+                        <a href="https://age-calculator-app-wine-xi.vercel.app/" target="_blank">LIVE SITE</a>
+                    </div>
+
+                    <a href="https://age-calculator-app-wine-xi.vercel.app/" target="_blank" class="project-image"><img src="./assets/age-calculator.PNG" alt="Age calculator"/></a>
+                </div>
+            </section>
+
+
+            <section class="contact-section">
+                <h2>Find me here!</h2>
+
+                <div class="logos-links">
+                    <a href="https://www.linkedin.com/in/lance-hemphill-250b85218/" target="_blank"><img src="./assets/logos/LI-In-Bug.png" alt="LinkedIn"/></a>
+                    <a href="https://github.com/IzykGit" target="_blank"><img src="./assets/logos/github-mark.png" alt="Github"/></a>
+                    <a style="background-color: rgb(47, 47, 250);" href="https://www.frontendmentor.io/profile/IzykGit" target="_blank"><img src="./assets/logos/frontend-mentor-logo.jpg" alt="Frontend Mentor"/></a>
+                    <a style="background-color: rgb(207, 27, 27);" href="https://www.codewars.com/dashboard" target="_blank"><img src="./assets/logos/codewars_logo_icon_145389.png" alt="Codewars"/></a>
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* about me section of webpage */
+
+.about-section {
+    height: fit-content;
+
+    margin-bottom: 5rem;
+}
+
+.about-section > h2 {
+    font-size: 2rem;
+}
+
+.my-goals, .about-me {
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+/* project section of webpage */
+
+
+.projects-section {
+    height: fit-content;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+
+    justify-items: center;
+
+    gap: 2rem;
+}
+
+.projects-section > h2 {
+    font-size: 2rem;
+    justify-self: flex-start;
+}
+
+.project-card {
+
+    width: 40rem;
+    height: 30rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12rem;
+}
+
+.project-links > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+
+    padding: 0.5rem;
+    border: 0.15rem solid black;
+
+    transition: 0.2s;
+}
+
+.project-links > a:hover {
+    color: white;
+    background-color: black;
+}
+
+.project-image > img {
+    height: auto;
+    width: 18rem;
+    cursor: pointer;
+    border: 0.15rem solid black;
+
+    transition: 0.2s;
+}
+
+.project-image > img:hover {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+/* contact section of webpage */
+
+.contact-section {
+    margin-bottom: 5rem;
+    width: 90%;
+}
+
+.contact-section > h2 {
+    font-size: 2rem;
+}
+
+.logos-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 100%;
+}
+
+.logos-links > a {
+    width: auto;
+    height: 8rem;
+    padding: 0.5rem;
+
+    background-color: white;
+    border: 0.15rem solid black;
+    box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+
+    transition: 0.2s;
+}
+
+.logos-links > a:hover {
+    box-shadow: 0.4rem 0.4rem 0rem 0rem black;
+    transform: translateY(-0.15rem);
+}
+
+.logos-links > a > img {
+    width: auto;
+    height: 100%
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    main {
+        display: unset;
+        overflow: auto;
+    }
+
+    .intro-section {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .intro-text-container {
+        position: relative;
+        left: 7rem;
+    }
+
+    .all-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .list-container > ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    .list-container {
+        justify-content: center;
+    }
+
+    .intro-section {
+        justify-content: center;
+    }
+
+    .intro-text-container {
+        left: 0rem;
+        margin: 0;
+        width: fit-content;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .projects-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project-card {
+        align-items: center;
+    }
+
+    .card-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-text {
+        align-items: center;
+        width: 100%;
+        min-height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+
+    .logos-links > a {
+        height: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .intro-section {
+        line-height: 3rem;
+    }
+
+    .intro-text-container {
+        min-width: none;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .intro-text-container > * {
+        text-align: center;
+    }
+
+    .intro-text-one {
+        font-size: 2rem;
+    }
+
+    .intro-text-two {
+        font-size: 1.5rem;
+    }
+
+    .intro-description {
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 0.7rem;
+    }
+
+
+    .contact-button {
+        display: flex;
+        align-items: center;
+
+        font-size: 1rem;
+        height: 4rem;
+    }
+    
+    .logos-links > a {
+        height: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .list-container {
+        justify-content: center;
+    }
+
+    .navlink, .navlink > a {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .project-image {
+        width: 80%;
+    }
+    
+    .project-image > img {
+        width: 100%;
+    }
+
+    .intro-description {
+        letter-spacing: 0rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .intro-text-one {
+        font-size: 1.7rem;
+    }
+
+    .intro-text-two {
+        font-size: 1.2rem;
+    }
+
+
+
+    .navlink, .navlink > a {
+        font-size: 0.75rem;
+    }
+}

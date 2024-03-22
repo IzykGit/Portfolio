@@ -30,6 +30,22 @@ main {
     justify-content: center;
 }
 
+.scroll-bar {
+    position: fixed;
+    z-index: 2;
+    width: 99%;
+    transition: 0.2s ease-out;
+}
+
+
+.scroll-percent {
+    width: 5%;
+    border-top: 0.3rem solid rgb(0, 105, 224);
+}
+
+
+
+
 .page-width {
     width: 80%;
 }

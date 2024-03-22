@@ -1,5 +1,5 @@
 
-const text = "Looking to make great websites and inovate."
+const text = "Looking to make great websites and innovate."
 
 const introDesc = document.querySelector('.intro-description')
 const contactBtn = document.querySelector('.hide-contact')
@@ -57,22 +57,18 @@ navLinks.forEach(link => {
 // calculating the scroll distance that allows the scroll percentage to move
 // translating the text along the X axis when scrolling
 
-const scrollableDiv = document.querySelector('.all-content')
 const scrolled = document.querySelector('.scroll-bar');
 const scrollPercentText = document.querySelector('.scroll-percent');
 
 let scrollPercentage;
 
 function calculateScrollDistance() {
-    const scrollTop = scrollableDiv.scrollTop;
-    const divHeight = scrollableDiv.clientHeight;
-    const scrollHeight = scrollableDiv.scrollHeight;
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const scrollHeight = document.documentElement.scrollHeight;
   
-    const totalScrollableDistance = scrollHeight - divHeight;
+    const totalScrollableDistance = scrollHeight - windowHeight;
     scrollPercentage = (scrollTop / totalScrollableDistance) * 100;
-  
-    console.log(`Scrolled: ${scrollPercentage.toFixed(2)}%`);
-    console.log(scrollPercentage.toFixed(2))
 
     if(scrollPercentage >= 97) {
         return
@@ -80,7 +76,30 @@ function calculateScrollDistance() {
     scrolled.style.transform = `translateX(${scrollPercentage.toFixed(2)}%)`
 }
 
-scrollableDiv.addEventListener('scroll', calculateScrollDistance);
+window.addEventListener('scroll', calculateScrollDistance);
+
+
+
+
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const nav = document.getElementById('nav-links')
+
+const ham1 = document.querySelector('.ham-1')
+const ham2 = document.querySelector('.ham-2')
+const ham3 = document.querySelector('.ham-3')
+
+
+hamburgerMenu.addEventListener('click', () => {
+
+        nav.classList.toggle('nav-cover')
+        nav.classList.toggle('nav-links')
+        console.log(nav.classList)
+
+        ham1.classList.toggle('ham-1-tilt')
+        ham2.classList.toggle('ham-2-tilt')
+        ham3.classList.toggle('ham-3-tilt')
+        
+})
 
 
 
@@ -89,21 +108,20 @@ scrollableDiv.addEventListener('scroll', calculateScrollDistance);
 // setting dark mode 
 
 
-const darkMode = document.getElementById('dark-mode') 
-const stylesheet = document.getElementById('style')
-let styleState = 1
+// const darkMode = document.getElementById('dark-mode') 
+// const stylesheet = document.getElementById('style')
+// let styleState = 1
 
-darkMode.addEventListener('click', () => {
-    if(styleState === 1) {
-        darkMode.innerHTML = "Light Mode"
-        stylesheet.href = "./styles/home-page/dark.css"
-        styleState = 2
-    }
-    else if (styleState === 2) {
-        darkMode.innerHTML = "Dark Mode"
-        stylesheet.href = "./styles/home-page/light.css"
-        styleState = 1
-    }
-})
-
+// darkMode.addEventListener('click', () => {
+//     if(styleState === 1) {
+//         darkMode.innerHTML = "Light Mode"
+//         stylesheet.href = "./styles/home-page/dark.css"
+//         styleState = 2
+//     }
+//     else if (styleState === 2) {
+//         darkMode.innerHTML = "Dark Mode"
+//         stylesheet.href = "./styles/home-page/light.css"
+//         styleState = 1
+//     }
+// })
 

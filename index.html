@@ -8,157 +8,38 @@
     <link id="style" rel="stylesheet" href="./styles/home-page/light.css">
 </head>
 <body>
-    <div class="scroll-bar">
-        <div class="scroll-percent"></div>
-    </div>
+
+
 
         <nav class="navbar">
-            <div class="list-container">
-                <ul>
-                    <li id="projects" class="navlink"><a href="./projects.html">All Projects</a></li>
-                    <li id="contacts" class="navlink">Contacts</li>
-                    <li id="dark-mode" class="navlink">Dark Mode</li>
-                </ul>
+            <div id="hamburger-menu" class="hamburger-menu">
+                <div class="ham-1"></div>
+                <div class="ham-2"></div>
+                <div class="ham-3"></div>
+            </div>
+            <div id="nav-links" class="nav-cover">
+                <p id="about" class="navlink"><a href="#">About</a></p>
+                <p id="projects" class="navlink"><a href="./projects.html">All Projects</a></p>
+                <p id="contacts" class="navlink">Contacts</p>
             </div>
         </nav>
 
 
     
         <main>
-            <div class="content-width">
 
-            <section class="intro-section">
-                <div class="intro-text-container">
-                    <h1 class="intro-text-one">Lance Hemphill</h1>
-                    <h2 class="intro-text-two">Front End Developer</h2>
+                <section class="intro-section">
+                    <div class="background-image"><img src="./assets/code-background.jpg"/></div>
 
-                    <p class="intro-description">- </p>
-                    <a class="hide-contact" href="https://www.linkedin.com/in/lance-hemphill-250b85218/" target="_blank">Contact Me</a>
-                </div>
-            </section>
-
-
-            <section class="about-section">
-                <h2>About Me</h2>
-                <p class="my-goals">Hello, my name is Lance Hemphill, and I am a <span class="keywords">Frontend Developer</span>.
-                My journey in Web Development began in late 2022, with intermittent learning throughout 2023.
-                However, from mid to late 2023, I fully committed to learning the ins and outs of software and understanding how the digital world works.
-                Currently, my primary goal is to continually enhance my skills and knowledge while seeking valuable opportunities.
-                </p>
-                <br />
-                <p class="about-me">When I am not studying though I am usually playing video games,
-                doing hobbies of mine such as car restoration, or looking for new music.</p>
-            </section>
-
-
-
-            <section class="projects-section">
-                <h2>Featured Projects</h2>
-
-
-
-                <!-- rock paper scissors project card -->
-                <div class="project-card" style="grid-column: 1;">
-                    <h3>Rock, Paper, Scissors Project</h3>
-                    <div class="card-content">
-
-                        <div class="project-text">
-                            <p>This project is a game of Rock Paper Scissors. In this game the player to chose an option and will face off against a computer.
-                            This project was made using <span class="keywords">HTML, CSS, and Javascript</span>.</p>
-
-                            <div class="project-links">
-                                <a href="https://github.com/IzykGit/rock-paper-scissors-game" target="_blank">GITHUB</a>
-                                <a href="https://rock-paper-scissors-game-eta-ten.vercel.app/" target="_blank">LIVE SITE</a>
-                            </div>
-
-                        </div>
-
-                        <a href="https://rock-paper-scissors-game-eta-ten.vercel.app/" target="_blank" class="project-image"><img src="./assets/rock-paper-scissors.PNG" alt="Rock paper scissors project"/></a>
+                    <div class="intro-text">
+                        <p class="name">Lance Hemphill</p>
+                        <h2 class="occupation">Front End Developer</h2>
+                        <p class="intro-description">- </p>
+                        <a class="hide-contact" href="https://www.linkedin.com/in/lance-hemphill-250b85218/" target="_blank">Contact Me</a>
                     </div>
-                </div>
+                </section>
 
 
-
-                <!-- countries api project card -->
-                <div class="project-card" style="grid-column: 2;">
-                    <h3>Countries API Project</h3>
-                    <div class="card-content">
-
-                        <div class="project-text">
-                            <p>This project was made in <span class="keywords">React</span> and allows the user to search and locate countries from an <span class="keywords">API</span>.
-                                When the user selects a country they can view information about the country and also select bordering countries.
-                            </p>
-
-                            <div class="project-links">
-                                <a href="https://github.com/IzykGit/rest-countries-project" target="_blank">GITHUB</a>
-                                <a href="https://rest-countries-project-sage.vercel.app/" target="_blank">LIVE SITE</a>
-                            </div>
-
-                        </div>
-
-                        <a href="https://rest-countries-project-sage.vercel.app/" target="_blank" class="project-image"><img src="./assets/rest-countries-project.PNG" alt="Countries API Project"/></a>
-                    </div>
-                </div>
-
-
-                <!-- calculator project card -->
-                <div class="project-card" style="grid-column: 1;">
-                    <h3>Calculator Project</h3>
-                    <div class="card-content">
-
-                        <div class="project-text">
-                            <p>A calculator application built using <span class="keywords">HTML, CSS, and Javascript</span> that also allows the user to switch between
-                                themes.
-                            </p>
-
-                            <div class="project-links">
-                                <a href="https://github.com/IzykGit/calculator-with-themes" target="_blank">GITHUB</a>
-                                <a href="https://calculator-with-themes-delta.vercel.app/" target="_blank">LIVE SITE</a>
-                            </div>
-
-                        </div>
-
-                        <a href="https://calculator-with-themes-delta.vercel.app/" target="_blank" class="project-image"><img src="./assets/calculator capture.PNG" alt="Calculator"/></a>
-                    </div>
-                </div>
-
-
-                <!-- age calculator project card -->
-                <div class="project-card" style="grid-column: 2;">
-                    <h3>Age Calculator Project</h3>
-                    <div class="card-content">
-
-                        <div class="project-text">
-                            <p>An age calculator application built using <span class="keywords">HTML, CSS, and Javascript</span> that also allows the user to calculate
-                            the age of something. The user enter the year, month, and day of their choosing and the app will calculate the age based on today's date.
-                            </p>
-
-                            <div class="project-links">
-                                <a href="https://github.com/IzykGit/age-calculator-app" target="_blank">GITHUB</a>
-                                <a href="https://age-calculator-app-wine-xi.vercel.app/" target="_blank">LIVE SITE</a>
-                            </div>
-
-                        </div>
-
-                        <a href="https://age-calculator-app-wine-xi.vercel.app/" target="_blank" class="project-image"><img src="./assets/age-calculator.PNG" alt="Age calculator"/></a>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="contact-section">
-                <h2>Find me here!</h2>
-
-                <div class="logos-links">
-                    <a href="https://www.linkedin.com/in/lance-hemphill-250b85218/" target="_blank"><img src="./assets/logos/LI-In-Bug.png" alt="LinkedIn"/></a>
-                    <a href="https://github.com/IzykGit" target="_blank"><img src="./assets/logos/github-mark.png" alt="Github"/></a>
-                    <a style="background-color: rgb(47, 47, 250);" href="https://www.frontendmentor.io/profile/IzykGit" target="_blank"><img src="./assets/logos/frontend-mentor-logo.jpg" alt="Frontend Mentor"/></a>
-                    <a style="background-color: rgb(207, 27, 27);" href="https://www.codewars.com/dashboard" target="_blank"><img src="./assets/logos/codewars_logo_icon_145389.png" alt="Codewars"/></a>
-                </div>
-
-            </section>
-
-            </div>
         </main>
 
 

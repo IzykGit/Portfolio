@@ -173,6 +173,18 @@ main {
 }
 
 
+@media screen and (max-width: 450px) {
+    .navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-links {
+        border-radius: 0rem;
+        border: 0.15rem solid rgb(1, 8, 32);
+    }
+}
+
 
 
 

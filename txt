@@ -145,20 +145,7 @@
 
             /* about me section of webpage */
 
-.about-section {
-    height: fit-content;
 
-    margin-bottom: 5rem;
-}
-
-.about-section > h2 {
-    font-size: 2rem;
-}
-
-.my-goals, .about-me {
-    line-height: 2rem;
-    font-size: 1rem;
-}
 
 
 

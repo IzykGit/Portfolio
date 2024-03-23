@@ -170,3 +170,50 @@ main {
         border: 0.15rem solid rgb(1, 8, 32);
     }
 }
+
+.keywords {
+    font-weight: 700;
+    color: coral;
+}
+
+
+
+.about-section {
+    width: 70%;
+}
+
+.about-section > h2 {
+    font-size: 4rem;
+}
+
+
+.my-goals, .about-me {
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.music-container  {
+    display: flex;
+    flex-direction: column;
+}
+
+.music-container > h3 {
+    font-size: 2rem;
+}
+
+.music-container > iframe {
+    width: 50%;
+    height: 15rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .music-container > iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-section {
+        width: 90%;
+    }
+}

@@ -42,8 +42,8 @@ h1 {
     width: 3.5rem;
     padding: 0.5rem;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.55rem;
+    right: 0.55rem;
     z-index: 3;
 
     display: flex;

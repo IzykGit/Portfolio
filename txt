@@ -2,7 +2,22 @@
             
             
             
+                            <section class="about-section">
+
+                                <div class="content-width">
             
+                                    <h2>About Me</h2>
+                                    <p class="my-goals">Hello, my name is Lance Hemphill, and I am a <span class="keywords">Frontend Developer</span>.
+                                    My journey in Web Development began in late 2022, with intermittent learning throughout 2023.
+                                    However, from mid to late 2023, I fully committed to learning the ins and outs of software and understanding how the digital world works.
+                                    Currently, my primary goal is to continually enhance my skills and knowledge while seeking valuable opportunities.
+                                    </p>
+                                    <br />
+                                    <p class="about-me">When I am not studying though I am usually playing video games,
+                                    doing hobbies of mine such as car restoration, or looking for new music.</p>
+            
+                                </div>  
+                            </section>
             
             
             

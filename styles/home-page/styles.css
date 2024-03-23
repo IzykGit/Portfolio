@@ -154,7 +154,6 @@ main {
     padding: 0.5rem;
     transition: 0.2s;
 
-    border: 0.15rem solid transparent;
     cursor: pointer;
 }
 
@@ -164,13 +163,13 @@ main {
     text-decoration: none;
     color: black;
 
-    border: 0.15rem solid transparent;
     cursor: pointer;
+
+    transition: 0.2s;
 }
 
-.navlink:hover {
-    border: 0.15rem solid rgb(0, 0, 0);
-    box-shadow: 0.2rem 0.2rem 0rem 0rem rgb(0, 0, 0);
+.navlink > a:hover {
+    color: rgb(231, 96, 47);
 }
 
 

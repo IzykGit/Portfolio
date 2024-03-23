@@ -24,35 +24,6 @@ setTimeout(typeEffect, startDelay)
 
 
 
-
-
-// calculating the scroll distance that allows the scroll percentage to move
-// translating the text along the X axis when scrolling
-
-const scrolled = document.querySelector('.scroll-bar');
-const scrollPercentText = document.querySelector('.scroll-percent');
-
-let scrollPercentage;
-
-function calculateScrollDistance() {
-    const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const scrollHeight = document.documentElement.scrollHeight;
-  
-    const totalScrollableDistance = scrollHeight - windowHeight;
-    scrollPercentage = (scrollTop / totalScrollableDistance) * 100;
-
-    if(scrollPercentage >= 97) {
-        return
-    }
-    scrolled.style.transform = `translateX(${scrollPercentage.toFixed(2)}%)`
-}
-
-window.addEventListener('scroll', calculateScrollDistance);
-
-
-
-
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const nav = document.getElementById('nav-links')
 
@@ -73,27 +44,4 @@ hamburgerMenu.addEventListener('click', () => {
         
 })
 
-
-
-
-
-// setting dark mode 
-
-
-// const darkMode = document.getElementById('dark-mode') 
-// const stylesheet = document.getElementById('style')
-// let styleState = 1
-
-// darkMode.addEventListener('click', () => {
-//     if(styleState === 1) {
-//         darkMode.innerHTML = "Light Mode"
-//         stylesheet.href = "./styles/home-page/dark.css"
-//         styleState = 2
-//     }
-//     else if (styleState === 2) {
-//         darkMode.innerHTML = "Dark Mode"
-//         stylesheet.href = "./styles/home-page/light.css"
-//         styleState = 1
-//     }
-// })
 

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html, .all-content {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    scroll-behavior: smooth;
+    scroll-snap-stop: always;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: rgb(1, 8, 32);
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
+
+.hamburger-menu {
+    height: 3rem;
+    width: 3.5rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+
+.ham-1 {
+    width: 100%;
+    height: 0.25rem;
+    background-color: rgb(255, 255, 255);
+
+    transition: 0.2s;
+}
+
+.ham-1-tilt {
+    transform: rotate(45deg) translateY(0.6rem) translateX(0.6rem);
+    background-color: coral;
+}
+
+
+.ham-2 {
+    width: 100%;
+    height: 0.25rem;
+    background-color: rgb(255, 255, 255);
+
+    transition: 0.1s;
+}
+
+.ham-2-tilt {
+    width: 0rem;
+    background-color: coral;
+}
+
+
+
+.ham-3 {
+    width: 100%;
+    height: 0.25rem;
+    background-color: rgb(255, 255, 255);
+
+    transition: 0.2s;
+}
+
+.ham-3-tilt {
+    transform: rotate(-45deg) translateY(-0.6rem) translateX(0.6rem);
+    background-color: coral;
+}
+
+
+
+/* navbar section of webpage */
+
+.navbar {
+    position: fixed;
+
+    margin: 2rem 2rem 0rem 0rem;
+
+    right: 0%;
+    width: 15rem;
+    height: 40vh;
+
+    z-index: 99;
+}
+
+.nav-links {
+    position: absolute;
+
+    border: 0.2rem solid rgb(1, 8, 32);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    transition: 0.2s;
+}
+
+.nav-cover {
+    width: 100%;
+    height: 0%;
+
+    transition: 0.2s;
+}
+
+.nav-cover > * {
+    display: none
+}
+
+
+.navlink {
+    font-weight: 700;
+    padding: 0.5rem;
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+.navlink > a {
+    font-weight: 700;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.navlink > a:hover {
+    color: rgb(231, 96, 47);
+}
+
+
+
+.keywords {
+    font-weight: 700;
+    color: coral;
+}
+
+
+
+
+
+.projects-section {
+    height: fit-content;
+    margin-bottom: 5rem;
+    width: 50rem;
+}
+
+
+.project-card {
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    height: fit-content;
+    padding: 1rem;
+
+    text-align: center;
+    margin-bottom: 2rem;
+
+    transition: 0.2s;
+}
+
+.project-text {
+    padding: 0rem 5rem;
+}
+
+
+.project-links {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.project-links > a {
+    padding: 1rem 2rem;
+    margin: 1rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: white;
+
+    border-radius: 1rem;
+    border: transparent;
+    background-color: coral;
+
+    height: 4rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.project-links > a:hover {
+    width: 11rem;
+    background-color: rgb(231, 96, 47);
+}
+
+.project-image > img {
+    height: auto;
+    width: 18rem;
+    cursor: pointer;
+    border-radius: 1rem;
+
+    transition: 0.2s;
+}
+
+.project-image > img:hover {
+    transform: scale(0.9);
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .projects-section {
+        width: 90%;
+    }
+
+    .navbar {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    .project-text {
+        padding: 0rem 1rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-image > img {
+        height: auto;
+        width: 11rem;
+    
+        transition: 0.2s;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-links {
+        border-radius: 0rem;
+    }
+}
+
+
+
+.frontendmentor {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1rem;
+
+    cursor: pointer;
+    position: relative;
+    bottom: 3rem;
+}
+
+.frontendmentor > a {
+    color: coral;
+    text-decoration: none;
+}

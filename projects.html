@@ -5,43 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Projects</title>
 
-    <link rel="stylesheet" href="./styles/projects-page/light.css">
+    <link rel="stylesheet" href="./styles/projects-page/styles.css">
 </head>
 <body>
     <main>
-        <div class="page-width">
 
-        <nav>
-            <h1>All Projects</h1>
-            <a class="navlink" href="./index.html">Home</a>
+        <nav class="navbar">
+            <div id="hamburger-menu" class="hamburger-menu">
+                <div class="ham-1"></div>
+                <div class="ham-2"></div>
+                <div class="ham-3"></div>
+            </div>
+            <div id="nav-links" class="nav-cover">
+                <p id="about" class="navlink"><a href="./index.html">Home</a></p>
+                <p id="projects" class="navlink"><a href="./about.html">About</a></p>
+                <p id="contacts" class="navlink"><a href="./#">Contacts</a></p>
+                <p class="navlink"><a href="https://www.frontendmentor.io/profile/IzykGit" target="_blank">Frontend Mentor</a></p>
+            </div>
         </nav>
 
-        
-        <div class="scroll-bar">
-            <div class="scroll-percent"></div>
-        </div>
+        <h1>Projects</h1>
 
-        <div class="alignment-div">
         <section class="projects-section">
-            <h2>Recent Projects</h2>
             <!-- rock paper scissors project card -->
             <div class="project-card">
                 <h3>Rock, Paper, Scissors Project</h3>
-                <div class="card-content">
 
-                    <div class="project-text">
-                        <p>This project is a game of Rock Paper Scissors. In this game the player to chose an option and will face off against a computer.
+                <div class="project-text">
+                    <p>This project is a game of Rock Paper Scissors. In this game the player to chose an option and will face off against a computer.
                         This project was made using <span class="keywords">HTML, CSS, and Javascript</span>.</p>
 
-                        <div class="project-links">
-                            <a href="https://github.com/IzykGit/rock-paper-scissors-game" target="_blank">GITHUB</a>
-                            <a href="https://rock-paper-scissors-game-eta-ten.vercel.app/" target="_blank">LIVE SITE</a>
-                        </div>
-
+                    <div class="project-links">
+                        <a href="https://github.com/IzykGit/rock-paper-scissors-game" target="_blank">GITHUB</a>
+                        <a href="https://rock-paper-scissors-game-eta-ten.vercel.app/" target="_blank">LIVE SITE</a>
                     </div>
 
-                    <a href="https://rock-paper-scissors-game-eta-ten.vercel.app/" target="_blank" class="project-image"><img src="./assets/rock-paper-scissors.PNG" alt="Rock paper scissors project"/></a>
                 </div>
+
+                <a href="https://rock-paper-scissors-game-eta-ten.vercel.app/" target="_blank" class="project-image"><img src="./assets/rock-paper-scissors.PNG" alt="Rock paper scissors project"/></a>
             </div>
 
 
@@ -95,8 +96,8 @@
                 <div class="card-content">
 
                     <div class="project-text">
-                        <p>An age calculator application built using <span class="keywords">HTML, CSS, and Javascript</span> that also allows the user to calculate
-                        the age of something. The user enter the year, month, and day of their choosing and the app will calculate the age based on today's date.
+                        <p>An advice generator application built using <span class="keywords">HTML, CSS, and Javascript</span>.
+                        This application retrieves data from an API, which is then displayed on the screen when the user clicks on the dice.
                         </p>
 
                         <div class="project-links">
@@ -109,10 +110,35 @@
                     <a href="https://age-calculator-app-wine-xi.vercel.app/" target="_blank" class="project-image"><img src="./assets/age-calculator.PNG" alt="Age calculator"/></a>
                 </div>
             </div>
-        </section>
-        </div>
 
-        </div>
+
+
+
+            <!-- advice generator project -->
+            <div class="project-card">
+                <h3>Advice Generator Project</h3>
+                <div class="card-content">
+
+                    <div class="project-text">
+                        <p>An age calculator application built using <span class="keywords">HTML, CSS, and Javascript</span>
+                            This application retrieves data from an API, which is then displayed on the screen when the user clicks on the dice.
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/IzykGit/advice-generator" target="_blank">GITHUB</a>
+                            <a href="https://advice-generator-psi-kohl.vercel.app/" target="_blank">LIVE SITE</a>
+                        </div>
+
+                    </div>
+
+                    <a href="https://advice-generator-psi-kohl.vercel.app/" target="_blank" class="project-image"><img src="./assets/adviceGenerator.PNG" alt="Age calculator"/></a>
+                </div>
+            </div>
+        </section>
+
+        <p>You can find more projects of mine on Frontend Mentor</p>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -24,34 +24,6 @@ setTimeout(typeEffect, startDelay)
 
 
 
-// randomly changes the navigation link rotation from left to right
-
-const navLinks = document.querySelectorAll('.navlink')
-
-navLinks.forEach(link => {
-    link.addEventListener("mouseover", () => {
-        const generateHoverVariable = Math.floor(Math.random() * 2)
-        console.log(generateHoverVariable)
-
-        if(generateHoverVariable === 0) {
-            link.classList.add('rotate-left')
-            console.log(link.classList)
-        }
-        else if (generateHoverVariable === 1){
-            link.classList.add('rotate-right')
-            console.log(link.classList)
-        }
-    })
-
-    link.addEventListener("mouseleave", () => {
-        link.classList.remove('rotate-left', 'rotate-right')
-
-        console.log("Mouse left", link.classList)
-    })
-})
-
-
-
 
 
 // calculating the scroll distance that allows the scroll percentage to move

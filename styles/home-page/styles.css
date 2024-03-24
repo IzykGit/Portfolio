@@ -22,15 +22,14 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
     background-color: rgb(1, 8, 32);
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100vh;
 }
 
 
 main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-
-
 }
 
 
@@ -38,12 +37,7 @@ main {
 
 
 
-
-
-
-
-
-
+/* hamburger menu */
 
 
 .hamburger-menu {
@@ -247,7 +241,7 @@ main {
 
 
 .intro-section {
-    height: 100vh;
+    height: 100%;
     color: white;
     
     line-height: 6rem;
@@ -414,26 +408,26 @@ main {
 
 
 
-/* classes used in next sections */
+.contacts {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
 
-
-
-.keywords {
-    font-weight: 700;
-}
-
-
-.content-width {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: rgb(207, 207, 207);
-    padding: 1.5rem;
-    border-radius: 1rem;
+    color: white;
 
-    width: 70%;
+    background-color: rgb(1, 8, 32);
+    opacity: 0.3;
+}
+
+.contacts > * {
+    margin: 1rem;
 }
 
 
-
-
+.social-link > img {
+    width: 3rem;
+}

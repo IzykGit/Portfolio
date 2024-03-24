@@ -217,3 +217,31 @@ main {
         width: 90%;
     }
 }
+
+
+
+
+.contacts {
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    background-color: rgb(1, 8, 32);
+    opacity: 0.3;
+}
+
+.contacts > * {
+    margin: 1rem;
+}
+
+
+.social-link > img {
+    width: 3rem;
+}

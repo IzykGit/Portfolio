@@ -411,12 +411,13 @@ main {
 .contacts {
     position: absolute;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     height: fit-content;
     text-align: center;
 
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
 
     background-color: rgb(1, 8, 32);

@@ -95,7 +95,7 @@ main {
 /* navbar section of webpage */
 
 .navbar {
-    position: fixed;
+    position: absolute;
 
     margin: 2rem 2rem 0rem 0rem;
 
@@ -179,7 +179,7 @@ main {
 
 
 .about-section {
-    width: 70%;
+    width: 50%;
 }
 
 .about-section > h2 {
@@ -202,17 +202,12 @@ main {
 }
 
 .music-container > iframe {
-    width: 50%;
+    width: 100%;
     height: 15rem;
 }
 
-@media screen and (max-width: 1200px) {
-    .music-container > iframe {
-        width: 100%;
-    }
-}
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
     .about-section {
         width: 90%;
     }

@@ -182,8 +182,8 @@ main {
 }
 
 @media screen and (max-height: 700px) {
-    .navbar {
-        height: 100%
+    .nav-links {
+        height: 100vh;
     }
 }
 
@@ -476,7 +476,7 @@ main {
 
 
 @media screen and (max-height: 700px) {
-    .social-link > image {
-        width: 1rem;
+    .social-link > img {
+        width: 2rem;
     }
 }

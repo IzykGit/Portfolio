@@ -297,6 +297,13 @@ h1 {
 }
 
 
+@media screen and (max-height: 700px) {
+    .navbar {
+        height: 100%
+    }
+}
+
+
 
 .frontendmentor {
     margin: 0;

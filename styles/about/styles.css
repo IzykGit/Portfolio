@@ -206,16 +206,16 @@ main {
     font-size: 1.2rem;
 }
 
-.music-container  {
+.video-container  {
     display: flex;
     flex-direction: column;
 }
 
-.music-container > h3 {
+.video-container > h3 {
     font-size: 2rem;
 }
 
-.music-container > iframe {
+.video-container > iframe {
     width: 100%;
     height: 15rem;
 }
